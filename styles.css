@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.scroll-container {
+	height: 400px; /* Fixed height for vertical scrolling */
+	overflow-y: auto; /* Enable vertical scrolling */
+	padding: 10px;
+	gap: 10px;
+	scroll-behavior: smooth;
+	width: fit-content;
+	border: solid 2px black;
+}
+
+.scroll-item {
+	height: 50px; /* Fixed height for each item */
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* === STYLING === */
+	border-radius: 5px;
+	margin: 5px;
+	color: white;
+	background: #007bff;
+}
+
+
+/* ===== Hide Scroller ===== */
+
+
+/* Hide the scrollbar for WebKit browsers (Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+	width: 0; 
+	height: 0;
+}
+
+/* Hide the scrollbar for Firefox */
+.scroll-container {
+	scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.scroll-container {
+	-ms-overflow-style: none;
+}
+
